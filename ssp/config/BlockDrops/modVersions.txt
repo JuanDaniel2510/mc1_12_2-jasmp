@@ -272,7 +272,6 @@
   "projectred-compat": "1.0",
   "discordsuite": "2.2.4",
   "akashictome": "1.2-12",
-  "dirt2path": "1.7.1",
   "bloodmagic": "1.12.2-2.4.3-105",
   "brandonscore": "2.4.18",
   "magicbees": "1.0",
