@@ -1,0 +1,82 @@
+{
+	"dependencies": "railcraft",
+	"populate": {
+		"zinc": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "railcraft:ore_metal",
+					"properties": {
+						"variant": "zinc"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 4
+			},
+			"cluster-count": 2,
+			"min-height": 40,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"saltpeter": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "railcraft:ore",
+					"properties": {
+						"variant": "saltpeter"
+					}
+				},
+				"material": "minecraft:sandstone",
+				"cluster-size": 10
+			},
+			"cluster-count": 10,
+			"min-height": 55,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		},
+		"sulfur": {
+			"enabled": "true",
+			"distribution": "underfluid",
+			"generator": {
+				"block": {
+					"name": "railcraft:ore",
+					"properties": {
+						"variant": "sulfur"
+					}
+				},
+				"material": "minecraft:stone",
+				"cluster-size": 2
+			},
+			"cluster-count": 6,
+			"fluid": "lava",
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "blacklist",
+				"value": [
+					-1,
+					1
+				]
+			}
+		}
+	}
+}
