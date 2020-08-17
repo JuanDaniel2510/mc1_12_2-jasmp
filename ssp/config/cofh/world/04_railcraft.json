@@ -38,9 +38,9 @@
 					}
 				},
 				"material": "minecraft:sandstone",
-				"cluster-size": 10
+				"cluster-size": 16
 			},
-			"cluster-count": 10,
+			"cluster-count": 6,
 			"min-height": 55,
 			"max-height": 75,
 			"retrogen": "true",
@@ -55,7 +55,7 @@
 		},
 		"sulfur": {
 			"enabled": "true",
-			"distribution": "underfluid",
+			"distribution": "uniform",
 			"generator": {
 				"block": {
 					"name": "railcraft:ore",
@@ -64,10 +64,11 @@
 					}
 				},
 				"material": "minecraft:stone",
-				"cluster-size": 2
+				"cluster-size": 8
 			},
-			"cluster-count": 6,
-			"fluid": "lava",
+			"cluster-count": 2,
+			"min-height": 0,
+			"max-height": 15,
 			"retrogen": "true",
 			"biome": "all",
 			"dimension": {
