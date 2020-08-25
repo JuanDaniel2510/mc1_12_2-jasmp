@@ -46,29 +46,6 @@
 					1
 				]
 			}
-		},
-		"quartz_high": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"block": {
-					"name": "thaumcraft:ore_quartz",
-				},
-				"material": "minecraft:stone",
-				"cluster-size": 8
-			},
-			"cluster-count": 8,
-			"min-height": 96,
-			"max-height": 200,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "blacklist",
-				"value": [
-					-1,
-					1
-				]
-			}
 		}
 	}
 }
