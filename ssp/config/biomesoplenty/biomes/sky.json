@@ -1,5 +1,8 @@
 {
   "generators": {
+    "crystals": {
+      "enable": false
+    },
     "amethyst": {
       "enable": false
     },
