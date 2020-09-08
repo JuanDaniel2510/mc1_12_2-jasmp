@@ -1,10 +1,18 @@
 import crafttweaker.item.IItemStack;
 import mods.jei.JEI as jei;
-import mods.integrateddynamics.Squeezer;
-import mods.integrateddynamics.MechanicalSqueezer;
 
 print("unidict_copper.zs: Loadding script...");
 
+//BLOCK
+var blockCopper = <thermalfoundation:storage:0> as IItemStack;
+//INGOT
+var ingotCopper = <thermalfoundation:material:128> as IItemStack;
+//NUGGET
+var nuggetCopper = <thermalfoundation:material:192> as IItemStack;
+//DUST
+var dustCopper = <thermalfoundation:material:64> as IItemStack;
+
+//Ores
 var oresCopper = [
     <embers:ore_copper>,
     <forestry:resources:1>,
@@ -19,18 +27,9 @@ var oresCopper = [
 ] as IItemStack[];
 for ore in oresCopper { jei.removeAndHide(ore); }
 
-//INGOT
-var ingotCopper = <thermalfoundation:material:128> as IItemStack;
-
 //Blocks to INGOT
 recipes.removeByRecipeName("thermalfoundation:material_41");
 recipes.removeByRecipeName("nuclearcraft:item.thermalfoundation.material.ingotcopper");
-
-//Nuggets to INGOT
-recipes.removeShapeless(<railcraft:nugget:1>*9, [ingotCopper], false);
-recipes.removeShapeless(<libvulpes:productnugget:4>*9, [ingotCopper], false);
-recipes.removeShapeless(<embers:nugget_copper>*9, [ingotCopper], false);
-recipes.removeByRecipeName("thermalfoundation:material_8");
 
 //INGOT to blocks
 recipes.remove(<mekanism:basicblock:12>, true);
@@ -45,6 +44,20 @@ var ingtosCopper = [
     <railcraft:ingot:1>
 ] as IItemStack[];
 for ingot in ingtosCopper { recipes.remove(ingot, true); }
+
+//Ingots to BLOCK
+
+//Nuggets to INGOT
+recipes.removeShapeless(<railcraft:nugget:1>*9, [ingotCopper], false);
+recipes.removeShapeless(<libvulpes:productnugget:4>*9, [ingotCopper], false);
+recipes.removeShapeless(<embers:nugget_copper>*9, [ingotCopper], false);
+recipes.removeByRecipeName("thermalfoundation:material_8");
+
+//INGOT to Nuggets
+
+//NUGGET to Ingot
+
+//Ingot to NUGGET
 
 //Dust
 jei.removeAndHide(<enderio:item_material:26>);
