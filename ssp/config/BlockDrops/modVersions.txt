@@ -207,6 +207,7 @@
   "thaumictinkerer": "1.12.2-5.0-620a0c5",
   "actuallybaubles": "1.1",
   "extratrees": "2.5.1.203",
+  "tinkertoolleveling": "1.12.2-1.1.0.DEV.b23e769",
   "actuallycomputers": "2.1.0",
   "commoncapabilities": "2.4.7",
   "crafttweakerjei": "2.0.3",
