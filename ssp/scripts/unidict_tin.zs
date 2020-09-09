@@ -32,6 +32,7 @@ recipes.removeByRecipeName("nuclearcraft:item.thermalfoundation.material.ingotti
 
 //INGOT to blocks
 recipes.removeByRecipeName("mekanism:basicblock_13");
+recipes.remove(<railcraft:metal:1>, true);
 
 //BLOCK to Ingots
 var ingtosTin = [
