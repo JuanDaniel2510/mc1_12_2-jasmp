@@ -30,4 +30,9 @@ recipes.addShapeless("jasmp_engineerstoolshammer_oreNickel_doubledust",<thermalf
 //Platinum
 recipes.addShapeless("jasmp_engineerstoolshammer_orePlatinum_doubledust",<thermalfoundation:material:70>*2,[<ore:orePlatinum>,<engineerstools:crushing_hammer>.anyDamage().transformDamage(2)]);
 
+//Gunpowder
+recipes.removeByRecipeName("immersiveengineering:material/gunpowder0");
+recipes.removeByRecipeName("immersiveengineering:material/gunpowder1");
+
+
 print("immersiveengineering.zs: Done.");
