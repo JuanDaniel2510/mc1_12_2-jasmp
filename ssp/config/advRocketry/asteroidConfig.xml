@@ -6,6 +6,6 @@
 	</asteroid>
 	<asteroid name="Iridium Enriched asteroid" distance="100" mass="25" massVariability="0.5" minLevel="0" probability="0.75" richness="0.2" richnessVariability="0.3">
 		<ore itemStack="minecraft:iron_ore" chance="25" />
-		<ore itemStack="libvulpes:ore0 10" chance="5" />
+		<ore itemStack="thermalfoundation:ore 7" chance="5" />
 	</asteroid>
 </Asteroids>
