@@ -1,9 +1,8 @@
+import mods.jei.JEI as jei;
 
 print("binnies_extrabees.zs: Loadding script...");
-/*
-var dusts = ["iron","gold","silver","copper","tin","nickel","lead"];
-for dust in dusts { recipes.removeByRecipeName("extrabees:"+dust+"_dust_dust"); }*/
 
+//Extrabees grains to dust
 recipes.removeByRecipeName("extrabees:iron_dust_dust");
 recipes.addShapeless("jasmp_extrabees_iron_dust",<thermalfoundation:material:0>,[<extrabees:misc:6>,<extrabees:misc:6>,<extrabees:misc:6>,<extrabees:misc:6>]);
 recipes.removeByRecipeName("extrabees:gold_dust_dust");
@@ -20,5 +19,9 @@ recipes.removeByRecipeName("extrabees:lead_dust_dust");
 recipes.addShapeless("jasmp_extrabees_lead_dust",<thermalfoundation:material:67>,[<extrabees:misc:13>,<extrabees:misc:13>,<extrabees:misc:13>,<extrabees:misc:13>]);
 recipes.removeByRecipeName("extrabees:coal_dust_dust");
 recipes.addShapeless("jasmp_extrabees_coal_dust",<thermalfoundation:material:768>,[<extrabees:misc:18>,<extrabees:misc:18>,<extrabees:misc:18>,<extrabees:misc:18>]);
+
+//Sulfur
+jei.removeAndHide(<botany:misc:3>);
+
 
 print("binnies_extrabees.zs: Done.");
