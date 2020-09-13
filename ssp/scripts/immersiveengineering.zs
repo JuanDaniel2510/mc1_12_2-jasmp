@@ -1,3 +1,4 @@
+import mods.immersiveengineering.DieselHandler as dieselGenerator;
 
 print("immersiveengineering.zs: Loadding script...");
 
@@ -34,5 +35,28 @@ recipes.addShapeless("jasmp_engineerstoolshammer_orePlatinum_doubledust",<therma
 recipes.removeByRecipeName("immersiveengineering:material/gunpowder0");
 recipes.removeByRecipeName("immersiveengineering:material/gunpowder1");
 
+
+//Diesel Generator
+dieselGenerator.removeFuel(<liquid:diesel>);
+dieselGenerator.removeFuel(<liquid:biodiesel>);
+
+dieselGenerator.addFuel(<liquid:gasoline>,300);
+dieselGenerator.addFuel(<liquid:diesel>,280);
+dieselGenerator.addFuel(<liquid:biodiesel>,140);
+dieselGenerator.addFuel(<liquid:oil>,100);
+dieselGenerator.addFuel(<liquid:oil_heavy>,260);
+dieselGenerator.addFuel(<liquid:oil_dense>,400);
+dieselGenerator.addFuel(<liquid:oil_distilled>,100);
+dieselGenerator.addFuel(<liquid:fuel_dense>,600);
+dieselGenerator.addFuel(<liquid:fuel_mixed_heavy>,160);
+dieselGenerator.addFuel(<liquid:fuel_light>,200);
+dieselGenerator.addFuel(<liquid:fuel_mixed_light>,80);
+dieselGenerator.addFuel(<liquid:fuel_gaseous>,40);
+dieselGenerator.addFuel(<liquid:coal>,100);
+dieselGenerator.addFuel(<liquid:refined_oil>,260);
+dieselGenerator.addFuel(<liquid:refined_fuel>,380);
+dieselGenerator.addFuel(<liquid:tree_oil>,100);
+dieselGenerator.addFuel(<liquid:seed_oil>,20);
+dieselGenerator.addFuel(<liquid:refined_biofuel>,200);
 
 print("immersiveengineering.zs: Done.");
