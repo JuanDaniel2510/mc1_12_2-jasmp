@@ -31,9 +31,11 @@ recipes.addShapeless("jasmp_engineerstoolshammer_oreNickel_doubledust",<thermalf
 //Platinum
 recipes.addShapeless("jasmp_engineerstoolshammer_orePlatinum_doubledust",<thermalfoundation:material:70>*2,[<ore:orePlatinum>,<engineerstools:crushing_hammer>.anyDamage().transformDamage(2)]);
 
-//Gunpowder
+//Other Recipes
 recipes.removeByRecipeName("immersiveengineering:material/gunpowder0");
 recipes.removeByRecipeName("immersiveengineering:material/gunpowder1");
+recipes.removeByRecipeName("immersiveengineering:material/dust_electrum");
+
 
 
 //Diesel Generator
