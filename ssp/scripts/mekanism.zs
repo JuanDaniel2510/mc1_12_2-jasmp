@@ -1,4 +1,5 @@
 //https://wiki.aidancbrady.com/wiki/Tutorials/CraftTweaker
+import mods.jei.JEI as jei;
 import mods.mekanism.enrichment as enr;
 import mods.railcraft.RollingMachine as rm;
 
@@ -42,5 +43,9 @@ rm.addShaped("jasmp_osmium_reinforcedRail",<railcraft:rail:4>*4,[
     [<ore:ingotOsmium>,<ore:dustObsidian>,<ore:ingotOsmium>],
     [<ore:ingotOsmium>,<ore:dustObsidian>,<ore:ingotOsmium>]
 ]);
+
+//Charcoal Block
+recipes.removeByRecipeName("mekanism:basicblock_3");
+jei.removeAndHide(<mekanism:basicblock:3>);
 
 print("mekanism.zs: Done.");

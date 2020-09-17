@@ -18,5 +18,8 @@ recipes.addShaped("jasmp_actuallyadditions_medium_to_large_crate",<actuallyaddit
     [<actuallyadditions:block_crystal_empowered:3>,<ore:plankWood>,<actuallyadditions:block_crystal_empowered:3>]
 ]);
 
+//Charcoal Block
+recipes.removeByRecipeName("actuallyadditions:recipes121");
+jei.removeAndHide(<actuallyadditions:block_misc:5>);
 
 print("actuallyadditions.zs: Done.");
