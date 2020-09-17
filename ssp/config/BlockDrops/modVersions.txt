@@ -169,6 +169,7 @@
   "minecraftmultipartcbe": "2.6.2.83",
   "enderioconduitsopencomputers": "5.2.59",
   "ocxnetdriver": "1.0.3",
+  "railcraft_tweaker": "0.0.0",
   "cosmeticarmorreworked": "1.12.2-v5a",
   "torohealthmod": "1.12.2-11",
   "forestry": "5.8.2.387",
