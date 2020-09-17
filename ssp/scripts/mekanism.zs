@@ -1,6 +1,6 @@
 //https://wiki.aidancbrady.com/wiki/Tutorials/CraftTweaker
 import mods.mekanism.enrichment as enr;
-
+import mods.railcraft.RollingMachine as rm;
 
 print("mekanism.zs: Loadding script...");
 
@@ -28,5 +28,19 @@ enr.removeRecipe(<ore:oreAluminum>,<libvulpes:productdust:9>*2);
 //enr.removeRecipe(<ore:oreAluminium>,<libvulpes:productdust:9>*2);
 enr.addRecipe(<ore:oreAluminum>,<thermalfoundation:material:68>*2);
 enr.addRecipe(<ore:oreAluminium>,<thermalfoundation:material:68>*2);
+
+//Railcraft
+recipes.removeByRecipeName("mekanism:rail");
+rm.addShaped("jasmp_osmium_rail",<railcraft:rail:0>*12,[
+    [<ore:ingotOsmium>,null,<ore:ingotOsmium>],
+    [<ore:ingotOsmium>,null,<ore:ingotOsmium>],
+    [<ore:ingotOsmium>,null,<ore:ingotOsmium>]
+]);
+
+rm.addShaped("jasmp_osmium_reinforcedRail",<railcraft:rail:4>*4,[
+    [<ore:ingotOsmium>,<ore:dustObsidian>,<ore:ingotOsmium>],
+    [<ore:ingotOsmium>,<ore:dustObsidian>,<ore:ingotOsmium>],
+    [<ore:ingotOsmium>,<ore:dustObsidian>,<ore:ingotOsmium>]
+]);
 
 print("mekanism.zs: Done.");
